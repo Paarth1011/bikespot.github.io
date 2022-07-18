@@ -1,0 +1,361 @@
+/* Header */
+
+/* Navigation Bar */
+
+#navbar{
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    margin: 0rem;    
+}
+#navbar img{
+    height: 2rem;
+    width: 11rem;
+    margin-left: 3rem;
+}
+#navbar .navbtn{
+    width: 100%;
+    display: none;
+}
+#navbar .navbtn .dropbtn{
+    font-size: 0.9rem;
+}
+#navbar .btns{
+    display: flex;
+    margin-right: 2rem;
+}
+#navbar .btns #menuToggle{
+    display: block;
+    font-size: 1.5rem;
+    margin: 0rem 1rem;
+    padding: 0.3rem 0.6rem 0.5rem 0.6rem;
+    color: white;
+    background-color: #00be8e;
+}
+#navbar .btns #menuToggle:hover{
+    cursor: pointer;
+    background-color: #00a87e;
+}
+#navbar .btns .sell{
+    font-weight: 700;
+}
+
+#menu{
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;   
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+#menu .menuItems{
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding: 0.8rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+#menu .menuItems:hover{
+    color: #019e77;
+}
+#menu .menuItems a{
+    text-decoration: none;
+    color: #00be8e;
+}
+
+/* Home */
+
+#home .h1{
+    font-size: 2.2rem;
+    padding: 0rem;
+}
+#home .h2{
+    font-size: 1.2rem;
+}
+
+/* Trending */
+
+.salesboxnew{
+    flex-direction: column;
+    border: 1px solid rgb(218, 218, 218);
+    width: 40%;
+    margin: 1rem auto;
+}
+.salesboxnew .bike-img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.salesboxnew .salesdetailsnew{
+    width: 90%;
+    margin: auto;
+    padding: 1.5rem 0rem 1rem 0rem;
+}
+.salesboxnew .salesdetailsnew h3{
+    padding-bottom: 7px; 
+    font-size: 1.1rem;
+}
+.salesboxnew .salesdetailsnew .bike-detail{
+    font-size: 0.8rem;
+}
+.salesboxnew .salespricenew{
+    width: 90%;
+    padding: 0rem 0rem;
+    border: none;
+    margin: auto;
+}
+.salesboxnew .salespricenew .bike-detail{
+    font-size: 0.8rem;
+}
+.salesboxnew .salespricenew .amount{
+    font-size: 1rem;
+}
+
+/* Deals */
+
+#deals{
+    flex-wrap: wrap;
+}
+.deal-box i{
+    color: white; 
+    font-size: 2rem; 
+    margin: .6rem;
+}
+.deal-num{
+    font-size: 1.1rem;
+}
+
+/* Blogs */
+
+#blog .blog-container{
+    flex-direction: column;
+}
+#blog .blog-container .blog-box{
+    border: 1px solid rgb(218, 218, 218);
+    width: 85%;
+    margin: 0rem auto 3rem auto;
+}
+#blog .blog-container .blog-box:hover{
+    cursor: pointer;
+    margin-top: -0.5rem;
+    transition: 0.1s;
+    z-index: 1;
+}
+#blog .blog-container .blog-box img{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+#blog .blog-container .blog-box h3{
+    font-size: 1rem;
+}
+#blog .review-container{
+    display: none;
+}
+
+/* Maintainance */
+
+#maintainance{
+    flex-direction: column;
+    /* border: 1px solid rebeccapurple; */
+    padding: 0;
+    padding: 0rem 0rem;
+}
+#maintainance .maintainance-img .img-hide{
+    display: block;
+}
+#maintainance img{
+    /* border: 1px solid red; */
+    margin: 0rem;
+    padding: 0rem;
+    height: 40%;
+    width: 40%;
+    display: block;
+    margin: 0rem auto;
+}
+
+#maintainance .inspection{
+    /* border: 1px solid red; */
+    width: 96%;
+    margin: 4rem auto 0rem auto;
+    padding: 0;
+}
+#maintainance .inspection .inspection-text1{
+    font-size: 15px; 
+    padding: 0.4rem 0rem;
+}
+#maintainance .inspection h3{
+    font-size: 23px; 
+    font-weight: 900; 
+    padding-right: 1.1rem;
+}
+#maintainance .inspection .inspection-text2{
+    font-size: 13px; 
+    line-height: 1.5rem;
+}
+#maintainance .inspection .checklist .fitems ul li{
+    font-size: 0.8rem;
+    /* border: 1px solid red; */
+}
+/* .checklist{
+    border: 1px solid red;
+} */
+.fitems{
+    /* border: 1px solid red; */
+    width: 30%;
+    margin-right: auto;
+}
+#maintainance .inspection .schedule-inspection{
+    width: 100%;
+    margin: 0.7rem auto;
+    font-size: 0.9rem;
+}
+
+/* Clients */
+
+.logo-container p{
+    margin: 1.3rem 3rem;
+    font-size: 0.9rem;
+}
+.motor-logo1{
+    height: 5rem;
+    width: 5rem;
+}
+.motor-logo2{
+    height: 5.5rem;
+    width: 8.5rem;
+}
+.motor-logo3{
+    height: 5.5rem;
+    width: 9rem;
+}
+
+/* Downloads */
+
+#downloads img{
+    display: none;
+}
+#downloads .dl-menu .btn-head, #downloads .dl-menu .btn-info{
+    text-align: center;
+}
+#downloads .dl-menu .btn-head{
+    font-size: 0.7rem;
+}
+#downloads .dl-menu .btn-info{
+    font-size: 1.2rem;
+}
+#downloads .dl-menu .dl-list{
+    display: none;
+}
+.winapp{
+    display: flex;
+    align-items: center;
+    margin: 0.6rem;
+    padding: 0rem;
+    background-color: black;
+    color: white;
+    border: 1.5px solid white;
+    width: 13rem;
+}
+.winapp i{
+    font-size: 2rem; 
+    margin: 0rem 0.1rem 0rem 0.9rem ;
+}
+.dl-from{
+    text-align: left; 
+    font-size: 0.6rem; 
+    margin: 0.2rem 0rem; 
+}
+.store{
+    text-align: left;
+    font-weight: 900;
+    font-size: 1rem
+}
+
+/* Footer */
+
+#footer{
+    flex-wrap: wrap;
+    padding: 0rem 2rem;
+}
+#footer hr{
+    display: block;
+}
+#footer .carspot{
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    margin: 1rem auto 0rem auto;
+}
+.carspot .one{
+    display: block;
+    margin: 0.5rem auto 1.5rem auto;
+    justify-content: center;
+}
+.carspot p{
+    text-align: center;
+}
+.carspot .two{
+    height: 2.8rem;
+    justify-content: center;
+}
+.carspot .two:hover{
+    opacity: 0.7;
+}
+.footdl-btn{
+    display: flex;
+    justify-content: center;
+}
+#footer .follow-us{
+    align-items: center;
+    width: 40%;
+    margin: 1.5rem auto 0.5rem auto;
+}
+#footer .quick-links{
+    align-items: center;
+    width: 40%;
+    margin: 1.5rem auto 0.5rem auto;
+}   
+#footer .sign-up{
+    width: 100%;
+    justify-content: center;
+    margin: 1rem auto 0rem auto;
+}
+#footer .sign-up input{
+    width: 100%;
+    margin: auto;
+}
+
+/* Utility */
+
+.title{
+    font-size: 1rem;
+}
+.para1{
+    font-size: 0.8rem;
+}
+.fsize8{
+    font-size: 0.7rem;
+}
+.fsize8-phone{
+    font-size: 0.8rem;
+}
+.fsize9{
+    font-size: 0.7rem;
+}
+.fsize9-phone{
+    font-size: 0.9rem;
+}
+.fsize12{
+    font-size: 0.9rem;
+}
+.custom-padding1{
+    padding: 10px 10px 11px 0px;
+}

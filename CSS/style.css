@@ -1,0 +1,737 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#abc{
+    background: url('../Resources/motorcycles.jpg') no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+}
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    background-color: #00be8e;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+    padding: 0.7rem 1rem;
+}
+#myBtn:hover{
+    background-color: #00926e;
+}
+.color-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(0,192,142,1) 100%);
+    top: 0;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    z-index: -1;
+}
+#head{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.6rem 0rem;
+}
+.search{
+    color: white;
+    font-weight: 500; 
+}
+.search:hover{
+    color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+.auth{
+    display: flex;
+}
+.auth p{
+    padding: 0px 7px;
+    color: white;
+}
+.auth p:hover{
+    color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+#navbar{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.6rem 0rem;
+}
+#navbar img{
+    height: 2.5rem;
+    width: 13rem;
+}
+.navbtn{
+    display: flex;
+}
+.navbtn .dropbtn{
+    margin: 0.2rem;
+    padding: 0px 15px;
+    font-size: 1rem;
+    color: rgb(73, 73, 73);
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
+.dropbtn:hover{
+    cursor: pointer;
+    color:#00be8e;
+}
+#menu{
+    display: none;
+}
+#menu .menuItems{
+    display: none;
+}
+.sell{
+    background-color: #00be8e;
+    color: white;
+    border: white;
+    font-weight: 700;
+    padding: 15px 25px;
+}
+.sell:hover{
+    background-color: #00a87e;
+    color: white;
+    cursor: pointer;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    overflow: hidden;
+    z-index: -1;
+}
+.h1{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    padding: 1rem 0rem;
+}
+.h2{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 1.8rem 0rem;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    overflow: hidden;
+    width: 66%;
+    margin: 1rem auto;
+}
+.container .col{
+    width: 30%;
+}
+.container .card{
+    height: 53px;
+    padding: 0.6rem;
+    box-sizing: border-box;
+    color: rgb(121, 121, 121);
+}
+.search-button{
+    height: 3.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #01bd8e;
+    color: white;
+    border: white;
+    font-weight: 700;
+    padding: 20px;
+    margin-right: 0rem;
+}
+.search-button:hover{
+    background-color: #00a87e;
+    color: white;
+    cursor: pointer;
+}
+
+.featured{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-evenly;
+    background-color: #f6f6f6;
+}
+.bike-purch{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bike-sell{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.sales-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.salesboxnew{
+    display: flex;
+    width: 85%;
+    height: auto;
+    margin: 1rem auto;
+    border: 1px solid rgb(218, 218, 218);
+}
+.salesboxnew .bike-img{
+    height: 14rem;
+    width: 28%;
+}
+.salesboxnew .bike-img img{
+    height: 100%;
+    width: 100%;
+}
+.salesboxnew .bike-img img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.salesboxnew .salesdetailsnew{
+    padding: 1.5rem 1.2rem;
+    width: 60%;
+    margin: 0rem auto;
+}
+.salesboxnew .salesdetailsnew h3{
+    padding-bottom: 7px; 
+    font-size: 1.3rem;
+}
+.salesboxnew .salesdetailsnew .bike-detail{
+    font-size: 0.8rem;
+}
+.salesboxnew .salespricenew{
+    border-left: 1px solid rgb(218, 218, 218);
+    padding: 1.5rem 1rem;
+    width: 15%;
+}
+.salesboxnew .salespricenew .bike-detail{
+    font-size: 0.8rem;
+}
+.salesboxnew .salespricenew .amount{
+    font-size: 1.1rem;
+}
+.salesboxnew .salespricenew #view-adnew{
+    color: white;
+    background-color: #01bd8e;
+    border: 1px solid white;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1.5rem auto;
+    padding: .5rem 0rem;
+}
+.salesboxnew .salespricenew #view-adnew:hover{
+    background-color: #00a87e;
+    cursor: pointer;
+}
+#deals{
+    overflow: hidden;
+    display: flex;
+    background: url('../Resources/dealbg.jpg') no-repeat center center/cover;
+    margin-top: 4rem;
+    align-items: center;
+    padding: 1rem 0rem;
+    justify-content: space-evenly;
+    z-index: -1;
+}   
+.deal-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem 2rem 2rem;
+}
+.deal-box a:hover{
+    cursor: pointer;
+}
+.deal-box i{
+    color: white; 
+    font-size: 2.5rem; 
+    margin: .6rem;
+}
+.deal-box i:hover{
+    color: #00be8e;
+}
+.deal-num{
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+}
+.blog-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.blog-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.blog-container .blog-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(218, 218, 218);
+    width: 24rem;
+    margin: 1rem;
+}
+.blog-container .blog-box:hover{
+    cursor: pointer;
+    margin-top: -0.5rem;
+    transition: 0.1s;
+    z-index: 1;
+}
+
+.blog-container .blog-box img{
+    height: 18rem;
+    width: 24rem;
+}
+
+.blog-container .blog-review{
+    display: flex;
+}
+.blog-comm{
+    margin: 1rem 1rem;
+}
+.review-container{
+    display: flex;
+    padding: 5rem 3rem;
+    background: url('/Resources/bg1.jpg') fixed center center/cover no-repeat;
+    margin-top: 3rem;
+    overflow: hidden;
+    align-items: center;
+    z-index: -1;
+}
+.review-container .review-box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    padding-right: 1rem;
+    margin: 0rem auto;
+}
+.review-comm{
+    margin: 1.3rem 1rem .1rem 2rem;
+}
+.prof-marg{
+    margin-bottom: 5px;
+}
+
+.review-container .review-box .review-profile{
+    display: flex;
+}
+.review-container .review-box .review-profile img{
+    height: 5rem;
+    width: 5rem;
+    margin: 1.5rem;
+}
+.profile-detail{
+    margin-top: 30px;
+}
+.profile-detail .checked{
+    color: orange;
+}
+.profile-detail .checked:hover{
+    cursor: pointer;
+}
+#maintainance{
+    overflow: hidden;
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+#maintainance .maintainance-img{
+    display: flex;
+}
+#maintainance .maintainance-img .img-hide{
+    display: none;
+}
+#maintainance img{
+    height: 25rem;
+    margin-left: 10rem;
+    margin-right: 6rem;
+}
+.inspection{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+#maintainance .inspection .inspection-text1{
+    font-size: 18px; 
+    padding: 0.7rem 0rem;
+}
+#maintainance .inspection h3{
+    font-size: 26px; 
+    font-weight: 900; 
+    padding-right: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+#maintainance .inspection .inspection-text2{
+    font-size: 15px; 
+    line-height: 1.5rem;
+}
+.checklist{
+    display: flex;
+    width: 100%;
+}
+.fitems{
+    margin: 1rem 1rem 1rem 0rem;
+    width: 30%;
+    margin-right: auto;
+}
+.check-items{
+    line-height: 1.5rem;
+}
+.check-items i{
+    color: #0ebf00;
+    padding-right: 5px;
+}
+.check-items1::before{
+    content: "✓ ";
+    font-weight: 900;
+    color: white;
+}
+.check-items{
+    list-style: none;
+}
+
+.schedule-inspection{
+    margin: .7rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #01bd8e;
+    color: white;
+    border: white;
+    font-weight: 700;
+    width: 300px;
+    height: 2.7rem;
+    padding: 20px;
+}
+.schedule-inspection:hover{
+    background-color: #00a87e;
+    color: white;
+    cursor: pointer;
+}
+#clients{
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 3rem 0rem 2rem 0rem;
+}
+.complete{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 2rem;
+}
+.logo-holder{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+.logo-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.logo-box a{
+    color: black;
+    text-decoration: none;
+}
+.logo-container:hover{
+    transition: .1s;
+    z-index: 1;
+    margin-top: 0rem;
+}
+.logo-container{
+    display: flex;
+    margin: 1.9rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-container p{
+    margin: 2rem 3rem;
+}
+.motor-logo1{
+    height: 6rem;
+    width: 6rem;
+}
+.motor-logo2{
+    height: 5.5rem;
+    width: 9.5rem;
+}
+.motor-logo3{
+    height: 5.5rem;
+    width: 9rem;
+}
+#downloads{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    background: url(../Resources/bg2.jpg) fixed center center/cover no-repeat;
+    z-index: -1;
+}
+#downloads img{
+    height: 30rem;
+    width: 26rem;
+    margin: 2rem 8rem 0rem 8rem;
+}
+.dl-menu{
+    margin: 2rem 3rem;
+    color: white;
+}
+.dl-list{
+    margin: 1.6rem 0rem;
+}
+.dl-list ul{
+    margin: 0;
+}
+.dl-list ul li{
+    list-style: none;
+}
+.dl-buttons{
+    display: flex;
+    align-items: center;
+    margin: 0rem 0rem;
+}
+.dl-buttons a{
+    text-decoration: none;
+}
+.winapp{
+    display: flex;
+    align-items: center;
+    margin: 0.6rem;
+    padding: 0rem;
+    background-color: black;
+    color: white;
+    border: 1.5px solid white;
+    width: 17rem;
+}
+.winapp i{
+    font-size: 3rem; 
+    margin: 0rem 0.9rem;
+}
+.winapp:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.dl-box{
+    display: flex;
+    flex-direction: column;
+    margin: 0.8rem;
+}
+.dl-from{
+    text-align: left; 
+    font-size: 0.7rem; 
+    margin: 0.2rem 0rem; 
+}
+.store{
+    text-align: left;
+    font-weight: 900;
+    font-size: 1.2rem
+}
+#footer{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* justify-content: center; */
+    background: url(../Resources/footer.jpg) no-repeat center center/cover;
+    padding: 3.4rem 6rem;
+}
+.carspot{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+}
+.carspot .one{
+    height: 2rem;
+    width: 11rem;
+    margin: 1.5rem 0rem;
+}
+.carspot .two{
+    height: 2.8rem;
+}
+.carspot .two:hover{
+    opacity: 0.7;
+}
+.footdl-btn{
+    display: flex;
+    margin: 1.5rem 0.6rem 0.6rem 0rem;
+}
+.footer-head{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.responsive-folquick{
+    display: none;
+}
+.follow-us{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 4rem 0rem 5rem;
+    width: 16.66%;
+}
+.social-link{
+    display: flex;
+    flex-direction: column;
+}
+.social-link .social-card{
+    display: flex;
+    align-items: center;
+}
+.social-link a{
+    text-decoration: none;
+}
+.social-link .social-card img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.4rem 0.4rem 0.4rem 0rem;
+}
+.social-link .social-card p:hover{
+    color: rgb(48, 48, 48);
+    cursor: pointer;
+}
+.social-link .social-card img:hover{
+    opacity: 0.5;
+}
+.quick-links{
+    width: 16.66%;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 3rem 0rem 0rem;
+}
+.quick-links a{
+    text-decoration: none;
+}
+.quick-card{
+    margin: 0.4rem 0.4rem 0.9rem 0rem;
+}
+.quick-card p:hover{
+    color: rgb(48, 48, 48);
+    cursor: pointer;
+}
+.sign-up{
+    width: 41%;
+}
+.input-sub{
+    display: flex;
+    overflow: hidden;
+}
+.sign-up input{
+    background-color: #f5f5f5;
+    border: medium none;
+    color: #999;
+    font-size: 12px;
+    height: 48px;
+    padding-left: 15px;
+    width: 100%;
+}
+.submit{
+    background-color: #01bd8e;
+    height: 48px;
+    padding: 0rem 1.5rem;
+    color: white;
+    border: none;
+}
+.submit:hover{
+    background-color: #00a87e;
+    color: white;
+    cursor: pointer;
+}
+/* Utility Classes */
+
+.colortint{
+    color: #00be8e;
+}
+.title{
+    margin-top: 3rem;
+    padding: 27px 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+}
+.para1{
+    padding: 3rem 10rem;
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+.para2{
+    font-size: 1rem;
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+.fsize8{
+    font-size: 0.8rem;
+}
+.fsize8-phone{
+    font-size: 0.7rem;
+}
+.fsize9{
+    font-size: 0.9rem;
+}
+.fsize12{
+    font-size: 1.2rem;
+}
+.fsize17{
+    font-size: 1.7rem;
+}
+.custom-margin{
+    margin-bottom: 0.3rem;
+}
+.font-title{
+    font-family: 'Rubik', sans-serif;
+}
+.font{
+    font-family: 'Open Sans', sans-serif;
+}
+.color-grey{
+    color: grey;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}

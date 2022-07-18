@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 1187px)" href="./CSS/laptops.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="./CSS/phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="./Javascript/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8743;</button>
+    <section id="abc">
+        <div class="color-overlay"></div>
+        <header id="head">
+            <div class="search">
+                Search
+            </div>
+            <div class="auth">
+                <p><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Login</p>
+                <p><i class="fa fa-unlock" aria-hidden="true"></i>&nbsp;&nbsp;Register</p>
+            </div>
+        </header>
+
+        <nav id="navbar">
+            <img src="./Resources/bikespot.jpg" alt="BikeSpot">
+    
+            <div class="navbtn">
+                <div class="dropbtn">HOME
+                    <!-- <div class="drop-content">
+                        <a href="#">Page 1</a>
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                    </div> -->
+                </div>
+                <div class="dropbtn">SEARCH
+                    <!-- <div class="drop-content">
+                        <a href="#">Page 1</a>
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                    </div> -->
+                </div>
+                <div class="dropbtn">COMPARE
+                    <!-- <div class="drop-content">
+                        <a href="#">Page 1</a>
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                    </div> -->
+                </div>
+                <div class="dropbtn">REVIEWS
+                    <!-- <div class="drop-content">
+                        <a href="#">Page 1</a>
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                    </div> -->
+                </div>
+                <div class="dropbtn">ABOUT US
+                    <!-- <div class="drop-content">
+                        <a href="#">Page 1</a>
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                    </div> -->
+                </div>
+                <div class="dropbtn">SERVICES
+                    <!-- <div class="drop-content">
+                        <a href="#">Page 1</a>
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                    </div> -->
+                </div>
+                <div class="dropbtn">PAGES
+                    <!-- <div class="drop-content">
+                        <a href="#">Page 1</a>
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                    </div> -->
+                </div>
+                <div class="dropbtn">USERS
+                    <!-- <div class="drop-content">
+                        <a href="#">Page 1</a>
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                    </div> -->
+                </div>
+            </div>
+            
+            <div class="btns">
+                <span id="menuToggle" class="none" onclick="openNav()">&#9781;</span>
+                <button class="sell">SELL YOUR BIKE</button>
+            </div>
+        </nav>
+
+        <div class="sell-phonecss none">
+            <button class="sell-phonebtn">SELL YOUR BIKE</button>
+        </div>
+
+        <div id="menu">
+            <div class="menuItems"><a href="#">HOME</a></div>
+            <div class="menuItems"><a href="#">SEARCH</a></div>
+            <div class="menuItems"><a href="#">COMPARE</a></div>
+            <div class="menuItems"><a href="#">REVIEWS</a></div>
+            <div class="menuItems"><a href="#">ABOUT US</a></div>
+            <div class="menuItems"><a href="#">SERVICES</a></div>
+            <div class="menuItems"><a href="#">PAGES</a></div>
+            <div class="menuItems"><a href="#">USERS</a></div>
+        </div>
+
+        <section id="home">
+            <p class="h1">Find What Are You Looking For</p>
+            <p class="h2">Over 90,000 Latest Bikes In Databank</p>
+
+            <div class="container">
+                <select name="cars" class="col card" placeholder="Select an option">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="Option 1" class="opt">Option 1</option>
+                    <option value="Option 2" class="opt">Option 2</option>
+                    <option value="Option 3" class="opt">Option 3</option>
+                    <option value="Option 4" class="opt">Option 4</option>
+                </select>
+                <input type="text" placeholder="Eg Honda Civic, Audi, Ford..." class="card col">
+                <button class="search-button col">SEARCH &nbsp;<i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </section>
+    </section>
+
+    <section id="intro">
+        <div class="title">
+            <h2>Latest <span style="color: #01bd8e;">Featured</span> Bikes</h2>
+        </div>
+    
+        <hr style="width:  10rem; margin: auto; height:1.5px;background-color: grey;">
+        <hr style="width: 6rem; margin: auto; height:1.5px;background-color:grey; ">
+    
+        <div class="para1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sunt illo? Maiores labore quos delectus
+                quas, nostrum rerum perferendis omnis.</p>
+        </div>
+    
+        <section class="featured">
+            <div class="bike-purch">
+                <div class="para2">
+                    <p class="fsize9 custom-margin"><em>Want To Sell Your Bike?</em></p>
+                    <p class="colortint fsize12">Are You Looking For A Bike?</p>
+                    <p class="fsize9">Search your car in our inventory and request a quote on the vehicle of your choosing
+                        sonu.</p>
+                </div>
+            </div>
+            <div class="bike-sell">
+                <div class="para2">
+                    <p class="fsize9 custom-margin"><em>Want To Sell Your Bike?</em></p>
+                    <p class="colortint fsize12">Do You Want To Sell Your Bike?</p>
+                    <p class="fsize9">Request search your car in our inventory and a quote on the vehicle of your choosing.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+
+    <section id="trending">
+        <div class="title">
+            <h2>Latest <span style="color: #01bd8e;">Trending</span> Ads</h2>
+        </div>
+
+        <hr style="width:  10rem; margin: auto; height:1.5px;background-color: grey;">
+        <hr style="width: 6rem; margin: auto; height:1.5px;background-color:grey; ">
+
+        <div class="para1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sunt illo? Maiores labore quos
+                delectus quas, nostrum rerum perferendis omnis.</p>
+        </div>
+
+        <div class="sales-container">
+            <div class="salesboxnew">
+                <div class="bike-img">
+                    <img src="./Resources/honda.jpg" alt="Honda">
+                </div>
+                <div class="salesdetailsnew">
+                    <h3 class="font">Honda Cbr 600</h3>
+                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-map-marker"></i> Bloomfield, New Jersey, United States &nbsp;&nbsp; <i class="fa fa-clock-o"></i> July 28, 2017</p>
+                    <p class="font color-grey bike-detail" style="padding-bottom: 14px;">On The Wheel was established in 2006 and has grown fast to become one of south's top motorcycle shops.</p>
+                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-motorcycle"></i> 8,000 km &nbsp;&nbsp;<i class="fa fa-fire"></i> 1500cc &nbsp;&nbsp;<i class="fa fa-car"></i> SxS & UTV &nbsp;&nbsp;<i class="fa fa-gear"></i> Red</p>
+                </div>
+                <div class="salespricenew">
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Ad Type : <span class="color-grey">Sell</span></p>
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Condition : <span class="color-grey">New</span></p>
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Visits : <span class="color-grey">2080</span></p>
+                    <p class="font"><span class="colortint amount">$ 3,343</span> <span class="color-grey" style="font-size: .7rem;">(Fixed)</span></p>
+                    <button id="view-adnew" class="font">VIEW AD</button>
+                </div>
+            </div>
+
+            <div class="salesboxnew">
+                <div class="bike-img">
+                    <img src="./Resources/kawasaki.jpg" alt="Kawasaki Ninja">
+                </div>
+                <div class="salesdetailsnew">
+                    <h3 class="font" style="padding-bottom: 7px;">Kawasaki Ninja Bike</h3>
+                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-map-marker"></i> Bellevue, Washington, United States &nbsp;&nbsp; <i class="fa fa-clock-o"></i> July 28, 2017</p>
+                    <p class="font color-grey bike-detail" style="padding-bottom: 14px;">On The Wheel was established in 2006 and has grown fast to become one of south's top motorcycle shops.</p>
+                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-motorcycle"></i> 8,000 km &nbsp;&nbsp;<i class="fa fa-fire"></i> 1250cc &nbsp;&nbsp;<i class="fa fa-car"></i> Road Bikes &nbsp;&nbsp;<i class="fa fa-gear"></i> Green
+                    </p>
+                </div>
+                <div class="salespricenew">
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Ad Type : <span class="color-grey">Sell</span></p>
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Condition : <span class="color-grey">New</span></p>
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Visits : <span class="color-grey">2169</span></p>
+                    <p class="font"><span class="colortint amount">$ 3,343</span> <span class="color-grey" style="font-size: .7rem;">(Negotiable)</span></p>
+                    <button id="view-adnew" class="font">VIEW AD</button>
+                </div>
+            </div>
+
+            <div class="salesboxnew">
+                <div class="bike-img">
+                    <img src="./Resources/ktm.jpg" alt="KTM">
+                </div>
+                <div class="salesdetailsnew">
+                    <h3 class="font" style="padding-bottom: 7px;">KTM Duke 200</h3>
+                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-map-marker"></i> Bellevue, Washington, United States &nbsp;&nbsp; <i class="fa fa-clock-o"></i> July 28, 2017</p>
+                    <p class="font color-grey bike-detail" style="padding-bottom: 14px;">On The Wheel was established in 2006 and has grown fast to become one of south's top motorcycle shops.</p>
+                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-motorcycle"></i> 8,000 km &nbsp;&nbsp;<i class="fa fa-fire"></i> 1250cc &nbsp;&nbsp;<i class="fa fa-car"></i> Road Bikes &nbsp;&nbsp;<i class="fa fa-gear"></i> Orange
+                    </p>
+                </div>
+                <div class="salespricenew">
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Ad Type : <span class="color-grey">Sell</span></p>
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Condition : <span class="color-grey">New</span></p>
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Visits : <span class="color-grey">2169</span></p>
+                    <p class="font"><span class="colortint amount">$ 3,343</span> <span class="color-grey" style="font-size: .7rem;">(Fixed)</span></p>
+                    <button id="view-adnew" class="font">VIEW AD</button>
+                </div>
+            </div>
+            <div class="salesboxnew">
+                <div class="bike-img">
+                    <img src="./Resources/harley.jpg" alt="Harley Davidson">
+                </div>
+                <div class="salesdetailsnew">
+                    <h3 class="font" style="padding-bottom: 7px;">Harley Davidson</h3>
+                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-map-marker"></i> Bellevue, Washington, United States &nbsp;&nbsp; <i class="fa fa-clock-o"></i> July 28, 2017</p>
+                    <p class="font color-grey bike-detail" style="padding-bottom: 14px;">On The Wheel was  established in 2006 and has grown fast to become one of south's top motorcycle shops.</p>
+                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-motorcycle"></i> 8,000 km &nbsp;&nbsp;<i class="fa fa-fire"></i> 1250cc &nbsp;&nbsp;<i class="fa fa-car"></i> Road Bikes &nbsp;&nbsp;<i class="fa fa-gear"></i> Black
+                    </p>
+                </div>
+                <div class="salespricenew">
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Ad Type : <span class="color-grey">Sell</span></p>
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Condition : <span class="color-grey">New</span></p>
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Visits : <span class="color-grey">2169</span></p>
+                    <p class="font"><span class="colortint amount">$ 3,343</span> <span class="color-grey" style="font-size: .7rem;">(Negotiable)</span></p>
+                    <button id="view-adnew" class="font">VIEW AD</button>
+                </div>
+            </div>
+            <div class="salesboxnew">
+                <div class="bike-img">
+                    <img src="./Resources/gixxer.jpg" alt="Suzuki Gixxer">
+                </div>
+                <div class="salesdetailsnew">
+                    <h3 class="font" style="padding-bottom: 7px;">Suzuki Gixxer SF MotoGP</h3>
+                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-map-marker"></i> Bellevue, Washington, United States &nbsp;&nbsp; <i class="fa fa-clock-o"></i> July 28, 2017</p>
+                    <p class="font color-grey bike-detail" style="padding-bottom: 14px;">On The Wheel was established in 2006 and has grown fast to become one of south's top motorcycle shops.</p>
+                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-motorcycle"></i> 8,000 km &nbsp;&nbsp;<i class="fa fa-fire"></i> 1250cc &nbsp;&nbsp;<i class="fa fa-car"></i> Road Bikes &nbsp;&nbsp;<i class="fa fa-gear"></i> Blue</p>
+                </div>
+                <div class="salespricenew">
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Ad Type : <span class="color-grey">Sell</span></p>
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Condition : <span class="color-grey">New</span></p>
+                    <p class="font bike-detail" style="padding-bottom: 5px;">Visits : <span class="color-grey">2169</span></p>
+                    <p class="font"><span class="colortint amount">$ 3,343</span> <span class="color-grey" style="font-size: .7rem;">(Fixed)</span></p>
+                    <button id="view-adnew" class="font">VIEW AD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="deals">
+        <div class="deal-box">
+            <a href="#"><i class="fa fa-motorcycle"></i></a>
+            <p class="deal-num font">1238</p>
+            <p class="font" style="color: white;">Total <span class="colortint">Bikes</span></p>
+        </div>
+        <div class="deal-box">
+            <a href="#"><i class="fa fa-user"></i></a>
+            <p class="deal-num font">820</p>
+            <p class="font" style="color: white;">Verified <span class="colortint">Dealers</span></p>
+        </div>
+        <div class="deal-box">
+            <a href="#"><i class="fa fa-heart"></i></a>
+            <p class="deal-num font">1024</p>
+            <p class="font" style="color: white;">Active <span class="colortint">Users</span></p>
+        </div>
+        <div class="deal-box">
+            <a href="#"><i class="fa fa-globe"></i></a>
+            <p class="deal-num font">75</p>
+            <p class="font" style="color: white;">Featured <span class="colortint">Ads</span></p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="title" style="margin-top: 3rem;">
+            <h2>Latest <span style="color: #01bd8e;">Blog</span> Post</h2>
+        </div>
+
+        <hr style="width:  10rem; margin: auto; height:1.5px;background-color: grey;">
+        <hr style="width: 6rem; margin: auto; height:1.5px;background-color:grey; ">
+
+        <div class="para1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sunt illo? Maiores labore quos
+                delectus quas, nostrum rerum perferendis omnis.</p>
+        </div>
+
+        <div class="blog-container">
+            <a href="#">
+                <div class="blog-box">
+                    <img src="./Resources/bike1.jpg" alt="Bike 1">
+                    <div class="blog-review">
+                        <p class="font color-grey fsize8 blog-comm">June 30, 2017</p>
+                        <p class="font color-grey fsize8 blog-comm">0 Comments</p>
+                    </div>
+                    <div class="blog-header">
+                        <h3 class="font blog-comm">Heavy Bikes Production For North America Will Cease For A Year</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="blog-box">
+                    <img src="./Resources/bike2.jpg" alt="Bike 1">
+                    <div class="blog-review">
+                        <p class="font color-grey fsize8 blog-comm">June 30, 2017</p>
+                        <p class="font color-grey fsize8 blog-comm">0 Comments</p>
+                    </div>
+                    <div class="blog-header">
+                        <h3 class="font blog-comm">We Hear: Yamaha RS Models Could Be Offered In Rear-Wheel</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="blog-box">
+                    <img src="./Resources/bike3.jpg" alt="Bike 1">
+                    <div class="blog-review">
+                        <p class="font color-grey fsize8 blog-comm">June 30, 2017</p>
+                        <p class="font color-grey fsize8 blog-comm">0 Comments</p>
+                    </div>
+                    <div class="blog-header">
+                        <h3 class="font blog-comm">Land Rover Freelander 2 SE First Impression</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="review-container">
+            <div class="review-box">
+                <h4 class="font review-comm">VERY QUICK AND FAST SUPPORT</h1>
+                    <p class="font color-grey fsize8 review-comm">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Eaque perferendis ab, nemo accusamus esse sint.</p>
+                    <div class="review-profile">
+                        <img src="./Resources/pf1.jpg" alt="Hania Shaikh">
+                        <div class="profile-detail">
+                            <p style="font-family: 'Source Sans Pro', sans-serif;" class="prof-marg fsize12"><b>Hania Shaikh</b></p>
+                            <p class="font prof-marg color-grey fsize9">CEO Pvt. Inc.</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+            </div>
+            <div class="review-box">
+                <h4 class="font review-comm">DONE IN 3 MONTHS! AWESOME</h1>
+                    <p class="font color-grey fsize8 review-comm">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Eaque perferendis ab, nemo accusamus esse sint.</p>
+                    <div class="review-profile">
+                        <img src="./Resources/pf2.png" alt="David Richer">
+                        <div class="profile-detail">
+                            <p style="font-family: 'Source Sans Pro', sans-serif;" class="prof-marg fsize12"><b>David
+                                    Richer</b></p>
+                            <p class="font prof-marg color-grey fsize9">CTO Glixen Tech.</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+            </div>
+            <div class="review-box">
+                <h4 class="font review-comm">JUST FABULOUS THEME</h1>
+                <p class="font color-grey fsize8 review-comm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque perferendis ab, nemo accusamus esse sint.</p>
+                <div class="review-profile">
+                    <img src="./Resources/pf3.png" alt="Katherine Leone">
+                    <div class="profile-detail">
+                        <p style="font-family: 'Source Sans Pro', sans-serif;" class="prof-marg fsize12">
+                        <b>Katherine Leone</b></p>
+                        <p class="font prof-marg color-grey fsize9">CTO Albana Inc.</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="maintainance">
+        <div class="maintainance-img">
+            <img src="./Resources/build.png" alt="Maintainance">
+            <img src="./Resources/build2.jpg" alt="Maintainance" class="img-hide">
+        </div>
+
+        <div class="inspection">
+            <p class="font fsize9 color-grey inspection-text1"><em>Want To Sell Your Bike?</em></p>
+            <h3 class="font">BIKE INSPECTION</h2>
+            <p class="font fsize8 color-grey inspection-text2">Our CarSure experts inspect the car on over 200 checkpoints so you get complete satisfaction and peace of mind before buying</p>
+            <div class="checklist">
+                <div class="fitems">
+                    <ul>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Transmission</li>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Tires</li>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Suspension</li>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Air Conditioning</li>
+                    </ul>
+                </div>
+                <div class="fitems">
+                    <ul>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Steering</li>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Lighting</li>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Exterior</li>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Engine Diagnostics</li>
+                    </ul>
+                </div>
+                <div class="fitems">
+                    <ul>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Engines</li>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Interior</li>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Breaks</li>
+                        <li class="font color-grey fsize9 check-items" style="padding: 1px;"><i class="fa fa-check"></i>Wheel Alignment</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="schedule-inspection font fsize9">SCHEDULE INSPECTION &nbsp;<i class="fa fa-angle-right"></i></button>
+        </div>
+        
+    </section>
+
+    <section id="clients" class="font">
+        <div class="complete">
+            <h2 class="font-title">Ads <span style="color: #01bd8e;">By Make</span></h2><br>
+            <hr style="width: 10rem; height:1.5px;background-color: grey;">
+            <hr style="width: 6rem; height:1.5px;background-color:grey; ">
+
+            <div class="logo-holder">
+                <div class="logo-box">
+                    <a href="https://www.bmw.in/en/index.html">
+                        <div class="logo-container">
+                            <img src="./Resources/bmw.png" alt="BMW" class="motor-logo1">
+                            <p class="blog-comm">BMW</p>
+                        </div>
+                    </a>
+                    <a href="https://www.hondacarindia.com/">
+                        <div class="logo-container">
+                            <img src="./Resources/honda.png" alt="Honda" class="motor-logo2">
+                            <p class="blog-comm">Honda</p>
+                        </div>
+                    </a>
+                    <a href="https://www.ducati.com/in/en/home">
+                        <div class="logo-container">
+                            <img src="./Resources/ducati.png" alt="Ducati" class="motor-logo2">
+                            <p class="blog-comm">Ducati</p>
+                        </div>
+                    </a>
+                    <a href="https://kawasaki-india.com/">
+                        <div class="logo-container">
+                            <img src="./Resources/kawasaki.png" alt="Kawasaki" class="motor-logo2">
+                            <p class="blog-comm">Kawasaki</p>
+                        </div>
+                    </a>
+                    <a href="https://www.ktm.com/en-in.html">
+                        <div class="logo-container">
+                            <img src="./Resources/ktm.png" alt="KTM" class="motor-logo1">
+                            <p class="blog-comm">KTM</p>
+                        </div>
+                    </a>
+                    <a href="https://www.suzukimotorcycle.co.in/">
+                        <div class="logo-container">
+                            <img src="./Resources/suzuki.png" alt="Suzuki" class="motor-logo3">
+                            <p class="blog-comm">Suzuki</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="downloads">
+        <img src="./Resources/phone.jpg" alt="Download">
+        <div class="dl-menu">
+            <p class="font-title fsize9 btn-head">DOWNLOAD OUR APP</p>
+            <p class="font-title fsize17 btn-info" style="margin: 0.7rem 0rem;">GET OUR APP FOR YOUR MOBILE</p>
+            <div class="dl-list">
+                <ul>
+                    <li class="font check-items1 fsize8" style="padding: 5px;">Find nearby cars in your network with Scholar</li>
+                    <li class="font check-items1 fsize8" style="padding: 5px;">Browse real hirers reviews to know why choose Scholar</li>
+                    <li class="font check-items1 fsize8" style="padding: 5px;">Rent a car so easy with a tap !</li>
+                    <li class="font check-items1 fsize8" style="padding: 5px;">Rent a car so easy with a tap !</li>
+                </ul>
+            </div>
+            <div class="dl-buttons">
+                <a href="#">
+                    <button class="winapp">
+                        <i class="fa fa-android"></i>
+                        <div class="dl-box">
+                            <p class="font dl-from">DOWNLOAD FROM</p>
+                            <p class="store font"><b>WINDOW STORE</b></p>
+                        </div>
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="winapp">
+                        <i class="fa fa-apple"></i>
+                        <div class="dl-box">
+                            <p class="font dl-from">DOWNLOAD FROM</p>
+                            <p class="store font"><b>APPLE STORE</b></p>
+                        </div>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="carspot">
+            <img src="./Resources/carspot.jpg" alt="Carspot" class="one">
+            <p class="font fsize8-phone color-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nobisquod vel unde magni amet?</p>
+            <div class="footdl-btn">
+                <a href="#"><img src="./Resources/gplay.jpg" alt="Google Play" class="two"></a>
+                <a href="#"><img src="./Resources/appstore.png" alt="Appstore" class="two"></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="follow-us">
+            <p class="footer-head">Follow Us</p>
+            <div class="social-link">
+                <a href="#">
+                    <div class="social-card">
+                        <img src="./Resources/fb.png" alt="Facebook">
+                        <p class="font color-grey fsize8-phone">Facebook</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-card">
+                        <img src="./Resources/twitter.png" alt="Twitter">
+                        <p class="font color-grey fsize8-phone">Twitter</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-card">
+                        <img src="./Resources/linkedin.png" alt="LinkedIn">
+                        <p class="font color-grey fsize8-phone">LinkedIn</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social-card">
+                        <img src="./Resources/google.png" alt="Google">
+                        <p class="font color-grey fsize8-phone">Google</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="quick-links">
+            <p class="footer-head">Quick Links</p>
+            <div>
+                <a href="#">
+                    <div class="quick-card">
+                        <p class="font color-grey fsize8-phone">Sample Page</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="quick-card">
+                        <p class="font color-grey fsize8-phone">About Us</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="quick-card">
+                        <p class="font color-grey fsize8-phone">Blog</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="quick-card">
+                        <p class="font color-grey fsize8-phone">Contact Us</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <hr style="display: none;">
+        
+        <div class="sign-up">
+            <p class="footer-head">SignUp For Weekly Newsletter</p>
+            <p class="font color-grey fsize8-phone" style="margin: 1rem 0rem;">We may send you information about related events, products and services which we believe.</p>
+            <div class="input-sub">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" autocomplete="off">
+                <button type="submit" class="submit font">SUBMIT</button>
+            </div>
+            <p class="font color-grey fsize8-phone" style="margin: 1.4rem 0rem;">Copyright 2017 &copy; Theme Created By <span style="color: #00be8e;">ScriptsBundle.</span> All Rights Reserved.</p>
+        </div>
+
+    </footer>
+</body>
+</html>
