@@ -319,7 +319,7 @@
 .review-container{
     display: flex;
     padding: 5rem 3rem;
-    background: url('/Resources/bg1.jpg') fixed center center/cover no-repeat;
+    background: url('../Resources/bg1.jpg') fixed center center/cover no-repeat;
     margin-top: 3rem;
     overflow: hidden;
     align-items: center;
@@ -706,7 +706,7 @@
     font-size: 0.8rem;
 }
 .fsize8-phone{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 .fsize9{
     font-size: 0.9rem;
