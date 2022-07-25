@@ -1,0 +1,58 @@
+.colortint{
+    color: #00be8e;
+}
+.title{
+    margin-top: 3rem;
+    padding: 27px 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+}
+.para1{
+    padding: 3rem 10rem;
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+.para2{
+    font-size: 1rem;
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+.fsize8{
+    font-size: 0.8rem;
+}
+.fsize8-phone{
+    font-size: 0.8rem;
+}
+.fsize9{
+    font-size: 0.9rem;
+}
+.fsize12{
+    font-size: 1.2rem;
+}
+.fsize17{
+    font-size: 1.7rem;
+}
+.custom-margin{
+    margin-bottom: 0.3rem;
+}
+.font-title{
+    font-family: 'Rubik', sans-serif;
+}
+.font{
+    font-family: 'Open Sans', sans-serif;
+}
+.color-grey{
+    color: grey;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}

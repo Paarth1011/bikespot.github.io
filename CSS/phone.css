@@ -149,17 +149,13 @@
 /* Trending */
 .sales-container{
     display: flex;
-
-
-
-
     flex-wrap: nowrap;
     flex-direction: column;
 }
 .salesboxnew{
     flex-direction: column;
     border: 1px solid rgb(218, 218, 218);
-    width: 85%;
+    width: 90%;
     margin: 1rem auto;
 }
 .salesboxnew .bike-img{
@@ -216,7 +212,7 @@
 }
 #blog .blog-container .blog-box{
     border: 1px solid rgb(218, 218, 218);
-    width: 85%;
+    width: 90%;
     margin: 0rem auto 3rem auto;
 }
 #blog .blog-container .blog-box:hover{
@@ -405,6 +401,9 @@
     width: 100%;
     justify-content: center;
     margin: 1rem auto 0rem auto;
+}
+#footer .sign-up .input-sub{
+    flex-direction: column;
 }
 #footer .sign-up input{
     width: 100%;

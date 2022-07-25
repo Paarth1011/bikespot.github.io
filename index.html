@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 1187px)" href="./CSS/laptops.css">
+    <link rel="stylesheet" href="./CSS/utility.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width: 1187px)" href="./CSS/laptops.css">
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 767px)" href="./CSS/tablets.css">
     <link rel="stylesheet" media="only screen and (max-width: 480px)" href="./CSS/phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,61 +41,61 @@
             <img src="./Resources/bikespot.jpg" alt="BikeSpot">
     
             <div class="navbtn">
-                <div class="dropbtn">HOME
-                    <!-- <div class="drop-content">
-                        <a href="#">Page 1</a>
-                        <a href="#">Page 2</a>
-                        <a href="#">Page 3</a>
-                    </div> -->
+                <div class="dropbtn" onmouseover="homeIn()" onmouseout="homeOut()"><p>HOME</p>
+                    <div class="drop-content" id="home-drop">
+                        <a href="#">HOME 1</a>
+                        <a href="#">HOME 2</a>
+                        <a href="#">HOME 3</a>
+                    </div>
                 </div>
-                <div class="dropbtn">SEARCH
-                    <!-- <div class="drop-content">
-                        <a href="#">Page 1</a>
-                        <a href="#">Page 2</a>
-                        <a href="#">Page 3</a>
-                    </div> -->
+                <div class="dropbtn" onmouseover="searchIn()" onmouseout="searchOut()"><p>SEARCH</p>
+                    <div class="drop-content" id="search-drop">
+                        <a href="#">SEARCH 1</a>
+                        <a href="#">SEARCH 2</a>
+                        <a href="#">SEARCH 3</a>
+                    </div>
                 </div>
-                <div class="dropbtn">COMPARE
-                    <!-- <div class="drop-content">
-                        <a href="#">Page 1</a>
-                        <a href="#">Page 2</a>
-                        <a href="#">Page 3</a>
-                    </div> -->
+                <div class="dropbtn" onmouseover="compareIn()" onmouseout="compareOut()"><p>COMPARE</p>
+                    <div class="drop-content" id="compare-drop">
+                        <a href="#">COMPARE 1</a>
+                        <a href="#">COMPARE 2</a>
+                        <a href="#">COMPARE 3</a>
+                    </div>
                 </div>
-                <div class="dropbtn">REVIEWS
-                    <!-- <div class="drop-content">
-                        <a href="#">Page 1</a>
-                        <a href="#">Page 2</a>
-                        <a href="#">Page 3</a>
-                    </div> -->
+                <div class="dropbtn" onmouseover="reviewIn()" onmouseout="reviewOut()"><p>REVIEWS</p>
+                    <div class="drop-content" id="review-drop">
+                        <a href="#">REVIEWS 1</a>
+                        <a href="#">REVIEWS 2</a>
+                        <a href="#">REVIEWS 3</a>
+                    </div>
                 </div>
-                <div class="dropbtn">ABOUT US
-                    <!-- <div class="drop-content">
-                        <a href="#">Page 1</a>
-                        <a href="#">Page 2</a>
-                        <a href="#">Page 3</a>
-                    </div> -->
+                <div class="dropbtn" onmouseover="abtusIn()" onmouseout="abtusOut()"><p>ABOUT US</p>
+                    <div class="drop-content" id="abtus-drop">
+                        <a href="#">ABOUT US 1</a>
+                        <a href="#">ABOUT US 2</a>
+                        <a href="#">ABOUT US 3</a>
+                    </div>
                 </div>
-                <div class="dropbtn">SERVICES
-                    <!-- <div class="drop-content">
-                        <a href="#">Page 1</a>
-                        <a href="#">Page 2</a>
-                        <a href="#">Page 3</a>
-                    </div> -->
+                <div class="dropbtn" onmouseover="servicesIn()" onmouseout="servicesOut()"><p>SERVICES</p>
+                    <div class="drop-content" id="services-drop">
+                        <a href="#">SERVICES 1</a>
+                        <a href="#">SERVICES 2</a>
+                        <a href="#">SERVICES 3</a>
+                    </div>
                 </div>
-                <div class="dropbtn">PAGES
-                    <!-- <div class="drop-content">
-                        <a href="#">Page 1</a>
-                        <a href="#">Page 2</a>
-                        <a href="#">Page 3</a>
-                    </div> -->
+                <div class="dropbtn" onmouseover="pagesIn()" onmouseout="pagesOut()"><p>PAGES</p>
+                    <div class="drop-content" id="pages-drop">
+                        <a href="#">PAGE 1</a>
+                        <a href="#">PAGE 2</a>
+                        <a href="#">PAGE 3</a>
+                    </div>
                 </div>
-                <div class="dropbtn">USERS
-                    <!-- <div class="drop-content">
-                        <a href="#">Page 1</a>
-                        <a href="#">Page 2</a>
-                        <a href="#">Page 3</a>
-                    </div> -->
+                <div class="dropbtn" onmouseover="usersIn()" onmouseout="usersOut()"><p>USERS</p>
+                    <div class="drop-content" id="users-drop">
+                        <a href="#">USER 1</a>
+                        <a href="#">USER 2</a>
+                        <a href="#">USER 3</a>
+                    </div>
                 </div>
             </div>
             
@@ -184,44 +186,6 @@
         </div>
 
         <div class="sales-container">
-            <div class="salesboxnew">
-                <div class="bike-img">
-                    <img src="./Resources/dominor.png" alt="Bajaj Dominor 400">
-                </div>
-                <div class="salesdetailsnew">
-                    <h3 class="font" style="padding-bottom: 7px;">Bajaj Dominor 400</h3>
-                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-map-marker"></i> Mumbai, Maharashtra, India &nbsp;&nbsp; <i class="fa fa-clock-o"></i> July 28, 2017</p>
-                    <p class="font color-grey bike-detail" style="padding-bottom: 14px;">On The Wheel was established in 2006 and has grown fast to become one of south's top motorcycle shops.</p>
-                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-motorcycle"></i> 8,000 km &nbsp;&nbsp;<i class="fa fa-fire"></i> 373.3cc &nbsp;&nbsp;<i class="fa fa-car"></i> Road Bikes &nbsp;&nbsp;<i class="fa fa-gear"></i> Green
-                    </p>
-                </div>
-                <div class="salespricenew">
-                    <p class="font bike-detail" style="padding-bottom: 5px;">Ad Type : <span class="color-grey">Sell</span></p>
-                    <p class="font bike-detail" style="padding-bottom: 5px;">Condition : <span class="color-grey">New</span></p>
-                    <p class="font bike-detail" style="padding-bottom: 5px;">Visits : <span class="color-grey">154</span></p>
-                    <p class="font"><span class="colortint amount">$ 2779.49</span> <span class="color-grey" style="font-size: .7rem;">(Negotiable)</span></p>
-                    <button id="view-adnew" class="font">VIEW AD</button>
-                </div>
-            </div>
-            <div class="salesboxnew">
-                <div class="bike-img">
-                    <img src="./Resources/honda2.jpg" alt="Honda Shine">
-                </div>
-                <div class="salesdetailsnew">
-                    <h3 class="font" style="padding-bottom: 7px;">Honda Shine</h3>
-                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-map-marker"></i> Mumbai, Maharashtra, India &nbsp;&nbsp; <i class="fa fa-clock-o"></i> July 28, 2017</p>
-                    <p class="font color-grey bike-detail" style="padding-bottom: 14px;">On The Wheel was established in 2006 and has grown fast to become one of south's top motorcycle shops.</p>
-                    <p class="font color-grey fsize8" style="padding-bottom: 7px;"><i class="fa fa-motorcycle"></i> 8,000 km &nbsp;&nbsp;<i class="fa fa-fire"></i> 124cc &nbsp;&nbsp;<i class="fa fa-car"></i> Road Bikes &nbsp;&nbsp;<i class="fa fa-gear"></i> Black
-                    </p>
-                </div>
-                <div class="salespricenew">
-                    <p class="font bike-detail" style="padding-bottom: 5px;">Ad Type : <span class="color-grey">Sell</span></p>
-                    <p class="font bike-detail" style="padding-bottom: 5px;">Condition : <span class="color-grey">New</span></p>
-                    <p class="font bike-detail" style="padding-bottom: 5px;">Visits : <span class="color-grey">2169</span></p>
-                    <p class="font"><span class="colortint amount">$ 937.52</span> <span class="color-grey" style="font-size: .7rem;">(Fixed)</span></p>
-                    <button id="view-adnew" class="font">VIEW AD</button>
-                </div>
-            </div>
 
             <div class="salesboxnew">
                 <div class="bike-img">
@@ -261,7 +225,6 @@
                     <button id="view-adnew" class="font">VIEW AD</button>
                 </div>
             </div>
-
             <div class="salesboxnew">
                 <div class="bike-img">
                     <img src="./Resources/ktm.jpg" alt="KTM">
