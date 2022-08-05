@@ -230,7 +230,20 @@
     font-size: 1rem;
 }
 #blog .review-container{
-    display: none;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+}
+#blog .review-container .review-box{
+    margin: 1.5rem auto;
+    width: 300px;
+}
+#blog .review-container .review-box p{
+    font-size: 11.2px;
+}
+#blog .review-container .review-box .profile-detail .name{
+    font-size: 14.4px;
 }
 
 /* Maintainance */
