@@ -1,4 +1,7 @@
 /* Header */
+#head{
+    padding: 0.6rem 2rem;
+}
 
 #head .search{
     font-size: 15px;
