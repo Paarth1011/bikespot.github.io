@@ -70,11 +70,25 @@
 /* Home */
 
 #home .h1{
-    font-size: 2.2rem;
+    margin-top: 1.2rem;
+    font-size: 2rem;
     padding: 0rem;
 }
 #home .h2{
     font-size: 1.2rem;
+}
+#home .container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 35%;
+    width: 80%;
+}
+#home .container .col{
+    width: 100%;
+}
+#home .container .card{
+    font-size: 12px;
 }
 
 /* Trending */
